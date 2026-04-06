@@ -32,6 +32,9 @@ $ sysview memory
 55.8 GB available
 ```
 
+![top-sv](https://github.com/user-attachments/assets/1062366f-7bcc-4457-aba3-95657c3dd8fc)
+
+
 ### CPU
 ```
 $ sysview cpu
@@ -89,6 +92,7 @@ $ sysview dashboard
                     SYSVIEW DASHBOARD
 ═══════════════════════════════════════════════════
 ```
+![sv](https://github.com/user-attachments/assets/1a3fa289-8bcd-49af-ad32-a59f9fc6cfee)
 
 ## Usage
 
