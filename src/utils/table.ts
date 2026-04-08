@@ -50,8 +50,8 @@ export function printHeader(title: string): void {
   const width = 50;
   const prefix = ' sysview - ';
   const fullTitle = prefix + title;
-  const padding = Math.max(0, Math.floor((width - fullTitle.length - 2) / 2));
-  const rightPadding = Math.max(0, width - fullTitle.length - padding - 2);
+  const padding = Math.max(0, Math.floor((width - fullTitle.length) / 2));
+  const rightPadding = Math.max(0, width - fullTitle.length - padding);
   console.log(chalk.bold.cyan('┌' + '─'.repeat(width) + '┐'));
   console.log(chalk.bold.cyan('│') + ' '.repeat(padding) + chalk.bold.white(fullTitle) + ' '.repeat(rightPadding) + chalk.bold.cyan('│'));
   console.log(chalk.bold.cyan('└' + '─'.repeat(width) + '┘'));

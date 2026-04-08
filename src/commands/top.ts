@@ -72,7 +72,7 @@ export async function topMode(interval: number = 2000, maxProcesses: number = 15
       console.log(chalk.cyan('│') + ` CPU:  ${cpuColor(cpuBar)} ${formatPercent(cpu.currentLoad).padStart(6)}                          ` + chalk.cyan('│'));
       console.log(chalk.cyan('│') + ` MEM:  ${memColor(memBar)} ${formatPercent(memPercent).padStart(6)}                          ` + chalk.cyan('│'));
       console.log(chalk.cyan('│') + `       ${formatBytes(mem.used)} / ${formatBytes(mem.total)}                                     ` + chalk.cyan('│'));
-      console.log(chalk.cyan('└─────────────────────────────────────────────────────────────────┘'));
+      console.log(chalk.cyan('└───────────────────────────────────────────────────────────────┘'));
       console.log();
 
       const sortedProcesses = processes.list
@@ -80,11 +80,11 @@ export async function topMode(interval: number = 2000, maxProcesses: number = 15
         .sort((a, b) => b.cpu - a.cpu)
         .slice(0, maxProcesses);
 
-      console.log(chalk.cyan('┌─ Processes ──────────────────────────────────────────────────────┐'));
+      console.log(chalk.cyan('┌─ Processes ────────────────────────────────────────────────────┐'));
       console.log(chalk.cyan('│') + 
-        chalk.bold.white(' PID    NAME              CPU%    MEM RSS    STATE      ').padEnd(69) + 
+        chalk.bold.white(' PID    NAME              CPU%    MEM RSS    STATE      ').padEnd(67) + 
         chalk.cyan('│'));
-      console.log(chalk.cyan('├─────────────────────────────────────────────────────────────────┤'));
+      console.log(chalk.cyan('├───────────────────────────────────────────────────────────────┤'));
       
       for (const proc of sortedProcesses) {
         const cpuStr = proc.cpu > 0 ? proc.cpu.toFixed(1).padStart(5) + '%' : '  0.0%';
@@ -104,7 +104,7 @@ export async function topMode(interval: number = 2000, maxProcesses: number = 15
           chalk.cyan('│'));
       }
       
-      console.log(chalk.cyan('└─────────────────────────────────────────────────────────────────┘'));
+      console.log(chalk.cyan('└───────────────────────────────────────────────────────────────┘'));
       console.log();
       console.log(chalk.dim(`  ${processes.all} total processes │ q to quit │ refresh: ${interval}ms`));
 

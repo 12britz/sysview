@@ -154,7 +154,7 @@ program
     } else {
       console.log();
       console.log(chalk.bold.cyan('╔══════════════════════════════════════════════════════════╗'));
-      console.log(chalk.bold.cyan('║') + chalk.bold.white('                    WATCH MODE') + chalk.bold.cyan('                           ║'));
+      console.log(chalk.bold.cyan('║') + chalk.bold.white('                    WATCH MODE') + chalk.bold.cyan('                            ║'));
       console.log(chalk.bold.cyan('╚══════════════════════════════════════════════════════════╝'));
       console.log();
       console.log(chalk.cyan('Real-time monitoring of:'));
@@ -196,7 +196,7 @@ program
       } else {
         console.log();
         console.log(chalk.bold.cyan('╔══════════════════════════════════════════════════════════╗'));
-        console.log(chalk.bold.cyan('║') + chalk.bold.white('                    PROCESS') + chalk.bold.cyan('                                ║'));
+        console.log(chalk.bold.cyan('║') + chalk.bold.white('                    PROCESS') + chalk.bold.cyan('                                 ║'));
         console.log(chalk.bold.cyan('╚══════════════════════════════════════════════════════════╝'));
         console.log();
         console.log(chalk.cyan('Process management:'));
@@ -330,8 +330,8 @@ program.on('command:*', () => {
 if (process.argv.length === 2) {
   console.log();
   console.log(chalk.bold.cyan('╔══════════════════════════════════════════════════════════╗'));
-  console.log(chalk.bold.cyan('║') + chalk.bold.white('                    SYSVIEW') + chalk.bold.cyan('                              ║'));
-  console.log(chalk.bold.cyan('║') + chalk.dim('  A beautiful CLI tool for system monitoring        ') + chalk.bold.cyan('║'));
+  console.log(chalk.bold.cyan('║') + chalk.bold.white('                    SYSVIEW') + chalk.bold.cyan('                               ║'));
+  console.log(chalk.bold.cyan('║') + chalk.dim('  A beautiful CLI tool for system monitoring              ') + chalk.bold.cyan('║'));
   console.log(chalk.bold.cyan('╚══════════════════════════════════════════════════════════╝'));
   console.log();
   console.log(chalk.cyan('Available commands:'));
