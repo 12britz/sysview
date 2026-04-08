@@ -1,6 +1,6 @@
 {
   "name": "@12britz/sysview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A beautiful CLI tool for system monitoring - ports, network, memory, CPU, disk with colorful tables",
   "main": "dist/main.js",
   "bin": {
